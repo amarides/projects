@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>My Travel Blog</title>
+  </head>
+  <body>
+    <h1>My Travels</h1>
+    <h2>Paris</h2>
+    <h3>September 2016</h3>
+    <nav>
+      <ul>
+        <li><a href="#highlights">Highlights</a></li>
+        <li><a href="#story">Full Story</a></li>
+        <ol>
+          <li><a href="#day1">Day 1</a></li>
+          <li><a href="#day2">Day 2</a></li>
+          <li><a href="#day3">Day 3</a></li>
+        </ol>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Instead of <div>s i used <sections> because they are more symantically accurate. -->
+    <section id="highlights">
+      <h3>My Favorite Spots in Paris</h3>
+      <ul>
+        <li>The Eiffel Tower</li>
+        <li>The Louvre</li>
+        <li>Jardin du Luxembourg</li>
+        <li>Palais Garnier</li>
+      </ul>
+      <p>Click <a href="https://en.wikipedia.org/wiki/Paris">here</a> to learn more about Paris!</p>
+    </section>
+    <section id="story">
+      <!-- I left this alone, but I have a slight reservation about using an <h2> here. Becuase structurally it implies that it's on par with Paris. At the same time, I know the Weekend is higher up the chain than the favorite spots and the month-->
+      <h2>A Weekend on the Seine</h2>
+      <p>I was lucky enough to spend three days visiting Paris this month! I went with a friend and we were able to see many things while we were there!</p>
+      <!-- Left these <h4> alone too but I think you could make them <h3>s and the page outline would still be structurally sound -->
+      <h4 id="day1">Day 1</h4>
+      <!-- In this paragraph I used <i> instead of <em> because I feel <i> is more symantically appropriate. <em> is more for screen readers and assitive devices -->
+      <p>On our first day, we started by visiting <i>Montmartre</i> right away. Our second stop was the Eiffel Tower (check out that beautiful picture!) We ate dinner at a cute little bistro overlooking <i>la Seine</i>.</p>
+      <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-1/freelance1-img_paris-eiffel.jpg" alt="Eiffel Tower" />
+      <h4 id="day2">Day 2</h4>
+      <p>On our second day, we went shopping on <i>Avenue des Champs Elysees</i>. Every single person we saw was dressed in the height of fashion.</p>
+      <!-- Line breaks are not necessary here. In my opinion, using two <p> is just as good and will be easier to style later-->
+      <p>After we finished shopping, we visited some really beautiful places! We went to <i>Notre Dame</i>. We went on a macaron tour of Paris and ate all of the best macarons the city had to offer. After we finished shopping, we visited <i>le Louvre</i>.</p>
+      <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-1/freelance1-img_paris-louvre.jpg" alt="le Louvre" />
+      <h4 id="day3">Day 3</h4>
+      <p>The picture below is of me visiting the <i>Arc de Triomphe</i>. It's huge! We also went to <i>le Musee D'Orsay</i>. Seeing the work of Renoir, Monet, and Van Gogh in person was completely breathtaking. I was surprised to see that the museum also had many sculptures including those by Auguste Rodin, Paul Gauguin, and Alfred Barye.</p>
+      <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-1/freelance1-img_paris-arc.jpg" alt="Arc de Triomphe" />
+    </section>
+    <section id="contact">
+      <h4>if you have any questions about my blog, here is my contact information:</h4>
+      <!-- I used the <b> tag instead of <strong> for similar reasons I used <i> instead of <em> -->
+      <p><b>email:</b> contact@mytravels.com | <b>phone:</b> 917-555-1098 | <b>address:</b> 371 284th St, New York, NY, 10001</p>
+    </section>
+  </body>
+</html>
