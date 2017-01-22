@@ -39,3 +39,23 @@ nav span {
 a {
   color: black;
 }
+.column.large {
+  width: 630px;
+}
+.column.medium {
+  width: 300px;
+}
+.column.small {
+  width: 240px;
+}
+main,
+section,
+article {
+  border: 1px solid black;
+}
+main {
+  display: flex;
+}
+.column {
+  display: flex;
+}
