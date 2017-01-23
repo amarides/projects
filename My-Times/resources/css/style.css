@@ -59,3 +59,23 @@ main {
 .column {
   display: flex;
 }
+.lead-story figure {
+  background: url("resources/images/img-story-main.png");
+}
+figure {
+  display: flex;
+}
+figure figcaption {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+.lead-story figcaption {
+  font-size: 40px;
+}
+.story p {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
