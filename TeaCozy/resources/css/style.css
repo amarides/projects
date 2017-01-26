@@ -1,3 +1,6 @@
+html {
+    font-family: Helvetica, sans-serif;
+}
 html, body {
   width: 100%;
   height: 100%;
@@ -10,13 +13,17 @@ body {
   font-size: 22px;
   text-align: center;
 }
+h2, h3, h4 {
+    margin: 0;
+    padding: 10px;
+}
 header {
   height: 69px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   position: fixed;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid seashell;
   width: 100%;
   margin: 0;
   background-color: black;
@@ -45,4 +52,66 @@ main {
   opacity: 0.9;
   width: 1200px;
   margin: auto;
+}
+figure {
+  margin: 0;
+}
+.text-content {
+  background-color: black;
+  margin: auto;
+  width: 100%;
+}
+#mission {
+  height: 700px;
+  width: 1200px;
+  background: url("../images/img-mission-background.jpg");
+  padding-top: 70px;
+}
+
+#feature-tea {
+  width: 1000px;
+  height: 700px;
+  padding-top: 70px;
+  margin: auto;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#feature-tea .container figure img {
+  height: 200px;
+  margin: 10px;
+  display: block;
+}
+#feature-tea .container figure span {
+  display: block;
+  padding: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+#feature-tea .container figure {
+  padding: 5px;
+}
+#locations {
+  background: url("../images/img-locations-background.jpg");
+  height: 500px;
+  padding-top: 70px;
+}
+.card {
+  opacity: 1;
+  padding: 10px;
+  margin: 5px 20px;
+  flex-basis: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+}
+#contact {
+  height: 200px;
+}
+footer {
+  text-align:left;
+  padding-left: 20px;
 }
