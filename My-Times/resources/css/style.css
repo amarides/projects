@@ -13,6 +13,7 @@ header {
   width: 100%;
   height: 80px;
   border-bottom: 1px solid black;
+  background-color: white;
 }
 .logo {
   color: MediumAquamarine;
@@ -35,7 +36,14 @@ nav span {
   display: inline-block;
   padding: 20px 10px;
 }
-
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Georgia;
+  font-size: 30px;
+  font-weight: bold;
+  font-style:normal;
+}
 a {
   color: black;
 }
@@ -48,7 +56,10 @@ a {
 .column.small {
   width: 240px;
 }
-
+figure {
+  margin-left: 0;
+  margin-right: 0;
+}
 main {
   display: flex;
   width: 1237px;
@@ -60,17 +71,24 @@ main {
   flex-direction: column;
   margin-right: 32px;
 }
-.lead-story figure {
+.lead-story .image-content {
   background-image: url("../images/img-story-main.png");
-}
-figure {
-  display: flex;
-  height:300px;
+  width: 630px;
+  margin-top: 0;
+  font-size: 40px;
   text-align: left;
-  margin: 0;
-  background-size:contain;
-  background-position: center center;
-  background-repeat: no-repeat;
+}
+.image-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  margin-top: 15px;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
 }
 figure figcaption {
   font-family: Georgia;
@@ -78,13 +96,17 @@ figure figcaption {
   font-size: 30px;
   color: white;
 }
-.lead-story figcaption {
+.lead-story .image-content figcaption {
   font-size: 40px;
+  margin-left: 20px;
 }
 .stories {
   display: flex;
   justify-content: space-between;
   margin-top: 17px;
+}
+.stories .text-content {
+  height: 250px;
 }
 .story {
   display:flex;
@@ -105,9 +127,18 @@ figure figcaption {
 .pop-culture {
   background-image: url("../images/img-story-3.png");
 }
-.large figure {
-  width: 640px;
+.news-bites h3 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 41px;
 }
-.medium figure {
-
+.bite {
+  display: block;
+  padding: 11px 20px;
+  background-color: whitesmoke;
+  color: dimgray;
+  border-bottom: 1px solid black;
+  font-size: 12px;
+  font-family: Verdana;
 }
