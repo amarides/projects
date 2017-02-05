@@ -2,3 +2,47 @@ html {
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
 }
+header {
+  width: 100%;
+}
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+.company {
+  background-color: black;
+  color: white;
+}
+.company .container {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0 1rem 0.5em;
+}
+.company .container img {
+  height: 1.5em;
+  margin: 0 1rem 0 0.5rem;
+}
+.compnay .container span {
+  font-size: 1rem;
+}
+nav ul li {
+  display: inline-block;
+}
+
+.banner {
+  background-image: url("../images/moto.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 25em;
+}
+.headline {
+  background-color: black;
+  color: white;
+  padding:2rem 3rem;
+}
+.headline h1{
+  font-size: 2rem;
+  margin-top: 0.25rem;
+  font-weight: bold;
+}
