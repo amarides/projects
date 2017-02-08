@@ -28,7 +28,6 @@ header {
 nav ul li {
   display: inline-block;
 }
-
 .banner {
   background-image: url("../images/moto.jpeg");
   background-repeat: no-repeat;
@@ -45,4 +44,37 @@ nav ul li {
   font-size: 2rem;
   margin-top: 0.25rem;
   font-weight: bold;
+}
+.products {
+  display:flex;
+  justify-content: space-between;
+  margin: 3em 0 0 0;
+}
+.product {
+  width: 30%;
+}
+.product figure {
+  padding: 2em 0;
+  background-color: white;
+  border: 4px solid black;
+  height: 9em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product figure img {
+  max-width: 8em;
+}
+.product figcaption {
+  display: block;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 0.5em;
+}
+
+@media only screen and (max-width: 480px) {
+  header {
+    width: 50%;
+  }
 }
