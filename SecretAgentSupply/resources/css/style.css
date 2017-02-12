@@ -1,6 +1,6 @@
 html {
   font-size: 18px;
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, sans-serif;
 }
 header {
   width: 100%;
@@ -25,8 +25,18 @@ header {
 .compnay .container span {
   font-size: 1rem;
 }
-nav ul li {
-  display: inline-block;
+nav {
+  background-color: firebrick;
+  color: white;
+}
+nav ul {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+}
+.mobile-nav {
+  display: none;
 }
 .banner {
   background-image: url("../images/moto.jpeg");
@@ -36,14 +46,23 @@ nav ul li {
   height: 25em;
 }
 .headline {
+  position: relative;
   background-color: black;
   color: white;
   padding:2rem 3rem;
+  width: 20rem;
+  top: 9rem;
 }
 .headline h1{
   font-size: 2rem;
   margin-top: 0.25rem;
   font-weight: bold;
+  text-transform: uppercase;
+}
+.headline h4{
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 .products {
   display:flex;
@@ -72,7 +91,38 @@ nav ul li {
   text-align: center;
   padding: 0.5em;
 }
-
+.buisness-info {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+.info .title {
+  background-color: black;
+  color: white;
+  padding: 1rem 0 1rem 2rem;
+}
+footer {
+  background-color: black;
+}
+footer .container {
+  padding:5rem 0;
+  text-align:left;
+  color: white;
+}
+@media only screen and (max-width: 1024px) {
+  .product {
+    width: 47%;
+  }
+  .glasses {
+    display: none;
+  }
+}
 @media only screen and (max-width: 480px) {
   header {
     width: 50%;
