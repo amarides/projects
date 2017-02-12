@@ -178,4 +178,7 @@ footer .container {
   .headline h4 {
     font-size: 0.77rem;
   }
+  footer .container {
+    text-align: center;
+  }
 }
