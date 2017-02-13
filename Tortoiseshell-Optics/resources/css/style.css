@@ -9,6 +9,9 @@ header {
   padding-top: 1rem;
   height: 30rem;
 }
+header ul {
+  padding: 1rem 2rem;
+}
 header ul li {
   display: inline-block;
   padding: 0 1rem;
@@ -23,6 +26,7 @@ header nav {
 .header-logo {
   display: flex;
   align-items: center;
+  margin-left: 2rem;
 }
 header .logo {
   margin-right: 1rem;
@@ -34,6 +38,8 @@ footer .container {
 }
 footer .logo {
   margin-right: 1rem;
+  margin-left: 3rem;
+  padding: 4rem 0;
 }
 .mobile-nav {
   display: none;
@@ -124,6 +130,62 @@ img.paper-icon {
     height: 22rem;
   }
 }
-@media only screen and (max-width: 480px) {
-
+@media only screen and (max-width: 700px) {
+  body {
+    line-height: 1rem;
+  }
+  header ul {
+    display: none;
+  }
+  .banner {
+    height: 17rem;
+    background-position: 20%;
+  }
+  .headline {
+    width: 100%;
+    margin-top: 10rem;
+    margin-right: 0;
+    padding: 1rem 0;
+    font-weight: bold;
+  }
+  .headline h1 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .mobile-nav  {
+    display: block;
+  }
+  .services {
+    flex-direction: column;
+    align-items: center;
+    padding: 3.77rem 0;
+  }
+  .service {
+    margin:0.77rem;
+    font-size: 0.77rem;
+    height: auto;
+  }
+  .business-info {
+    flex-direction: column;
+  }
+  .info {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  .info .title {
+    max-width: 100%;
+    text-align: center;
+  }
+  .info p {
+    margin:1rem 0.25rem;
+    font-size: 0.77rem;
+    padding: 0;
+  }
+  .buisness-title,
+  .copyright {
+    display: none;
+  }
+  footer .container {
+    justify-content: center;
+  }
 }
